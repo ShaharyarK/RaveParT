@@ -28,9 +28,16 @@ class _SoundSyncScreenState extends State<SoundSyncScreen> {
   void _startCapture() async {
     if (!isCapturing) {
       try {
-        await _audioCapture.start((data) {
-          print("🔊 Capturing Audio Data...");
-        }, sampleRate: 44100);
+        await _audioCapture.start(
+          (data) {
+            print("🔊 Capturing Audio Data...");
+          },
+          (error) {
+            print("❌ Audio Capture Error: $error");
+          }, // ✅ Added the required onError callback
+          sampleRate: 44100,
+        );
+
         setState(() {
           isCapturing = true;
         });
