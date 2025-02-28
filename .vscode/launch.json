@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Rave ParT Dev",
+        "request": "launch",
+        "type": "dart",
+        "args": [
+          "--flavor",
+          "dev"
+        ]
+      },
+      // {
+      //   "name": "Rave ParT Prod",
+      //   "request": "launch",
+      //   "type": "dart",
+      //   "args": [
+      //     "--flavor",
+      //     "prod"
+      //   ]
+      // },
+      {
+        "name": "Rave ParT Test",
+        "request": "launch",
+        "type": "dart",
+        "args": [
+          "--flavor",
+          "qa"
+        ]
+      }
+    ]
+  }
