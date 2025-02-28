@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ravepart_app/screens/rave_screen.dart';
 import '../widgets/custom_button.dart';
 import 'sound_sync_screen.dart'; // Import the new screen
 
@@ -19,7 +20,12 @@ class MenuScreen extends StatelessWidget {
                 title: "Get The Rave Going!",
                 fontColor: Colors.white,
                 buttonColor: Colors.purpleAccent,
-                onPressed: () {}),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => RaveScreen()),
+                  );
+                }),
             SizedBox(height: 20),
             CustomButton(
                 title: "Sound Sync Mode 🎶",

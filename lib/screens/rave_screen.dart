@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_audio_capture/flutter_audio_capture.dart';
+import 'package:torch_light/torch_light.dart';
 
 class RaveScreen extends StatefulWidget {
   @override
@@ -14,48 +15,13 @@ class _RaveScreenState extends State<RaveScreen> {
   bool _isFlashing = true;
   double _flashSpeed = 300; // Default speed
   String _mode = "Strobe"; // Default Mode
+  bool _isFlasherEnabled = false; // Controls flashlight effect
+  Timer? _flashTimer; // Store the Timer instance
 
   @override
   void initState() {
     super.initState();
     _startLightShow();
-    _startAudioCapture();
-  }
-
-  void _startLightShow() {
-    Timer.periodic(Duration(milliseconds: _flashSpeed.toInt()), (timer) {
-      if (!_isFlashing) {
-        timer.cancel();
-      } else {
-        setState(() {
-          _backgroundColor = _getRandomColor();
-        });
-      }
-    });
-  }
-
-  void _startAudioCapture() async {
-    await _audioCapture.start(listener, onError,
-        sampleRate: 44100, bufferSize: 3000);
-  }
-
-  void listener(dynamic obj) {
-    List<double> audioSamples = List<double>.from(obj);
-    double avgVolume =
-        audioSamples.fold(0.0, (double sum, val) => sum + val.abs());
-    audioSamples.length;
-
-    if (_mode == "Sound Sync") {
-      if (avgVolume > 0.02) {
-        setState(() {
-          _backgroundColor = _getRandomColor();
-        });
-      }
-    }
-  }
-
-  void onError(Object error) {
-    print("Audio Capture Error: $error");
   }
 
   Color _getRandomColor() {
@@ -66,6 +32,44 @@ class _RaveScreenState extends State<RaveScreen> {
       random.nextInt(256),
       random.nextInt(256),
     );
+  }
+
+  void _startLightShow() {
+    _flashTimer?.cancel(); // Cancel existing timer before starting a new one
+    _flashTimer =
+        Timer.periodic(Duration(milliseconds: _flashSpeed.toInt()), (timer) {
+      if (!_isFlashing || !mounted) {
+        timer.cancel();
+        _turnOffFlash();
+      } else {
+        if (mounted) {
+          setState(() {
+            _backgroundColor = _getRandomColor();
+            if (_isFlasherEnabled) {
+              _toggleFlash();
+            }
+          });
+        }
+      }
+    });
+  }
+
+  void _toggleFlash() async {
+    try {
+      await TorchLight.enableTorch();
+      await Future.delayed(Duration(milliseconds: (_flashSpeed ~/ 2).toInt()));
+      await TorchLight.disableTorch();
+    } catch (e) {
+      print("Flashlight Error: $e");
+    }
+  }
+
+  void _turnOffFlash() async {
+    try {
+      await TorchLight.disableTorch();
+    } catch (e) {
+      print("Error turning off flash: $e");
+    }
   }
 
   void _changeMode(String newMode) {
@@ -81,9 +85,18 @@ class _RaveScreenState extends State<RaveScreen> {
     });
   }
 
+  void _toggleFlasher(bool enabled) {
+    setState(() {
+      _isFlasherEnabled = enabled;
+      if (!enabled) _turnOffFlash(); // Turn off flash if disabled
+    });
+  }
+
   @override
   void dispose() {
     _audioCapture.stop();
+    _flashTimer?.cancel();
+    _turnOffFlash(); // Ensure flash is turned off on exit
     super.dispose();
   }
 
@@ -102,6 +115,9 @@ class _RaveScreenState extends State<RaveScreen> {
                   _isFlashing = !_isFlashing;
                   if (_isFlashing) {
                     _startLightShow();
+                  } else {
+                    _flashTimer?.cancel();
+                    _turnOffFlash();
                   }
                 });
               },
@@ -145,6 +161,19 @@ class _RaveScreenState extends State<RaveScreen> {
                   child: Text(mode, style: TextStyle(color: Colors.white)),
                 );
               }).toList(),
+            ),
+            SizedBox(height: 20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text("Enable Flasher",
+                    style: TextStyle(color: Colors.white, fontSize: 16)),
+                Switch(
+                  value: _isFlasherEnabled,
+                  onChanged: _toggleFlasher,
+                  activeColor: Colors.purpleAccent,
+                ),
+              ],
             ),
           ],
         ),

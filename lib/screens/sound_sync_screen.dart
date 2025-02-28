@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_audio_capture/flutter_audio_capture.dart';
+import 'package:provider/provider.dart';
+import '../providers/sound_sync_provider.dart';
 
 class SoundSyncScreen extends StatefulWidget {
   @override
@@ -7,80 +8,42 @@ class SoundSyncScreen extends StatefulWidget {
 }
 
 class _SoundSyncScreenState extends State<SoundSyncScreen> {
-  final FlutterAudioCapture _audioCapture = FlutterAudioCapture();
-  bool isCapturing = false;
-
   @override
   void initState() {
     super.initState();
-    _initializeAudioCapture();
-  }
 
-  Future<void> _initializeAudioCapture() async {
-    try {
-      await _audioCapture.init();
-      print("🎤 FlutterAudioCapture Initialized Successfully!");
-    } catch (e) {
-      print("❌ Error initializing audio capture: $e");
-    }
-  }
-
-  void _startCapture() async {
-    if (!isCapturing) {
-      try {
-        await _audioCapture.start(
-          (data) {
-            print("🔊 Capturing Audio Data...");
-          },
-          (error) {
-            print("❌ Audio Capture Error: $error");
-          }, // ✅ Added the required onError callback
-          sampleRate: 44100,
-        );
-
-        setState(() {
-          isCapturing = true;
-        });
-      } catch (e) {
-        print("❌ Error starting audio capture: $e");
-      }
-    }
-  }
-
-  void _stopCapture() async {
-    if (isCapturing) {
-      await _audioCapture.stop();
-      setState(() {
-        isCapturing = false;
-      });
-      print("🛑 Stopped Audio Capture.");
-    }
-  }
-
-  @override
-  void dispose() {
-    _audioCapture.stop();
-    super.dispose();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      final soundSyncProvider =
+          Provider.of<SoundSyncProvider>(context, listen: false);
+      soundSyncProvider.requestMicrophonePermission();
+      soundSyncProvider.loadCaptureState(); // Load user preference
+    });
   }
 
   @override
   Widget build(BuildContext context) {
+    final soundSyncProvider = Provider.of<SoundSyncProvider>(context);
+
     return Scaffold(
-      appBar: AppBar(title: Text("Sound Sync Mode")),
+      appBar: AppBar(
+        title: Text("Sound Sync Mode"),
+        actions: [
+          IconButton(
+            icon: Icon(
+                soundSyncProvider.isCapturing ? Icons.stop : Icons.play_arrow),
+            onPressed: () {
+              soundSyncProvider
+                  .setCaptureEnabled(!soundSyncProvider.isCapturing);
+            },
+          )
+        ],
+      ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            ElevatedButton(
-              onPressed: _startCapture,
-              child: Text("Start Sound Sync"),
-            ),
-            SizedBox(height: 10),
-            ElevatedButton(
-              onPressed: _stopCapture,
-              child: Text("Stop"),
-            ),
-          ],
+        child: Text(
+          soundSyncProvider.isCapturing
+              ? "Capturing Audio..."
+              : "Audio Capture Stopped",
+          style: TextStyle(fontSize: 18),
         ),
       ),
     );

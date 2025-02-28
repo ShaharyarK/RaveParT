@@ -57,7 +57,7 @@ android {
 
     defaultConfig {
         applicationId "com.innov8.ravepart"
-        minSdkVersion 24
+        minSdkVersion 21
         targetSdkVersion 34
         versionCode flutterVersionCode.toInteger() // Add this line
         versionName flutterVersionName // Add this line
