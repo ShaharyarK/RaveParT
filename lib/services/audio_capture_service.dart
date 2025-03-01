@@ -14,12 +14,12 @@ class AudioCaptureService {
       try {
         await _audioCapture.start(
           (data) {
-            print("🔊 Capturing Surrounding Music...");
+            onData(data); // ✅ Ensure callback actually processes data
           },
           (error) {
             print("❌ Music Capture Error: $error");
           },
-          sampleRate: 44100,
+          sampleRate: 22050, // Keep high sample rate for better sensitivity
         );
         isCapturing = true;
         print("🎤 Music Capture Started");

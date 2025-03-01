@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:ravepart_app/screens/loading_screen.dart';
 import 'providers/sound_sync_provider.dart';
 import 'screens/sound_sync_screen.dart';
+import 'screens/menu_screen.dart';
 
 void main() {
   runApp(

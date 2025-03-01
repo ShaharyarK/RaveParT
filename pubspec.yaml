@@ -35,15 +35,16 @@ dependencies:
   flutter_audio_capture: ^1.0.4
   path_provider: ^2.0.15
   permission_handler: ^11.0.1
-  shared_preferences: ^2.0.13
+  shared_preferences: 2.0.13
   provider: ^6.0.5
   torch_light: ^1.1.0
-
+  sound_stream: ^0.4.1
 
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: ^0.13.1
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -55,6 +56,10 @@ dev_dependencies:
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
+flutter_launcher_icons:
+  android: true
+  image_path: "assets/logo4.webp"
+  adaptive_icon_foreground: "assets/logo4.webp"
 # The following section is specific to Flutter packages.
 flutter:
 

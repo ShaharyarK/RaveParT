@@ -13,8 +13,7 @@ class _SoundSyncScreenState extends State<SoundSyncScreen> {
     super.initState();
 
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      final soundSyncProvider =
-          Provider.of<SoundSyncProvider>(context, listen: false);
+      final soundSyncProvider = context.read<SoundSyncProvider>();
       soundSyncProvider.requestMicrophonePermission();
       soundSyncProvider.loadCaptureState(); // Load user preference
     });
@@ -22,7 +21,8 @@ class _SoundSyncScreenState extends State<SoundSyncScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final soundSyncProvider = Provider.of<SoundSyncProvider>(context);
+    final soundSyncProvider =
+        Provider.of<SoundSyncProvider>(context, listen: false);
 
     return Scaffold(
       appBar: AppBar(
@@ -41,8 +41,8 @@ class _SoundSyncScreenState extends State<SoundSyncScreen> {
       body: Center(
         child: Text(
           soundSyncProvider.isCapturing
-              ? "Capturing Audio..."
-              : "Audio Capture Stopped",
+              ? "Capturing Music..."
+              : "Music Capture Stopped",
           style: TextStyle(fontSize: 18),
         ),
       ),

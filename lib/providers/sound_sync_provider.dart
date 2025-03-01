@@ -1,11 +1,19 @@
+import 'dart:async';
+import 'dart:math';
+
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../services/audio_capture_service.dart';
 import 'package:permission_handler/permission_handler.dart';
+import 'package:sound_stream/sound_stream.dart';
 
 class SoundSyncProvider extends ChangeNotifier {
+  final RecorderStream _recorder = RecorderStream();
+  StreamSubscription? _audioSubscription;
   bool _isCapturing = false;
   bool get isCapturing => _isCapturing;
+  double _currentVolume = 0.0;
+  double get volumeLevel => _currentVolume;
 
   final AudioCaptureService _audioCaptureService = AudioCaptureService();
 
@@ -27,11 +35,24 @@ class SoundSyncProvider extends ChangeNotifier {
     }
   }
 
-  void startCapture() {
+  void startCapture() async {
+    if (_isCapturing) return;
+    var status = await Permission.microphone.status;
+    if (!status.isGranted) {
+      print("🚨 Microphone permission required before capturing!");
+      return;
+    }
+
     if (!_isCapturing) {
-      _audioCaptureService.startCapture((data) {
-        print("🔊 Capturing Audio Data...");
+      await _recorder.initialize(); // Ensure initialization before usage
+      await _recorder.start();
+      _audioSubscription = _recorder.audioStream.listen((event) {
+        _processAudio(event);
       });
+      await _audioCaptureService.startCapture((data) {
+        _processAudio(data.buffer.asInt8List()); // 🔥 Ensure data is passed
+      });
+
       _isCapturing = true;
       notifyListeners();
     }
@@ -39,9 +60,12 @@ class SoundSyncProvider extends ChangeNotifier {
 
   void stopCapture() {
     if (_isCapturing) {
+      _recorder.stop();
       _audioCaptureService.stopCapture();
       _isCapturing = false;
       notifyListeners();
+      _audioSubscription?.cancel();
+      _currentVolume = 0.0;
     }
   }
 
@@ -54,5 +78,29 @@ class SoundSyncProvider extends ChangeNotifier {
     } else {
       stopCapture();
     }
+  }
+
+  void _processAudio(List<int> audioBytes) {
+    List<double> signal = audioBytes.map((b) => b.toDouble()).toList();
+    int min = audioBytes.reduce((a, b) => a < b ? a : b);
+    int max = audioBytes.reduce((a, b) => a > b ? a : b);
+    print("🔊 Min Volume: $min, Max Volume: $max");
+
+    // Calculate RMS
+    double rms = sqrt(
+        signal.fold<double>(0.0, (sum, val) => sum + (val * val)) /
+            signal.length);
+
+    // 🔥 Normalize dynamically (adjust divisor based on RMS range)
+    double normalizedVolume = (rms / 250).clamp(0.0, 1.0);
+
+    // 🚀 Boost sensitivity if volume is too low
+    if (normalizedVolume < 0.05) {
+      normalizedVolume *= 3; // Amplify very low signals
+    }
+
+    _currentVolume = normalizedVolume.clamp(0.0, 1.0);
+
+    notifyListeners();
   }
 }
