@@ -51,8 +51,7 @@ class _RaveScreenState extends State<RaveScreen> {
   @override
   void initState() {
     super.initState();
-    // _initializeAd();
-    _loadInterstitialAd();
+    _initializeAd();
     _startLightShow();
     Future.delayed(Duration(seconds: 3), () {
       setState(() {
