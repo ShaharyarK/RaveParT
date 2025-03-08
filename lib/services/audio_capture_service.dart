@@ -1,5 +1,6 @@
 import 'dart:typed_data';
 import 'package:flutter_audio_capture/flutter_audio_capture.dart';
+import 'dart:developer' as developer; // Import the developer library
 
 class AudioCaptureService {
   static final AudioCaptureService _instance = AudioCaptureService._internal();
@@ -17,14 +18,14 @@ class AudioCaptureService {
             onData(data); // ✅ Ensure callback actually processes data
           },
           (error) {
-            print("❌ Music Capture Error: $error");
+            developer.log("❌ Music Capture Error: $error");
           },
           sampleRate: 22050, // Keep high sample rate for better sensitivity
         );
         isCapturing = true;
-        print("🎤 Music Capture Started");
+        developer.log("🎤 Music Capture Started");
       } catch (e) {
-        print("❌ Error starting music capture: $e");
+        developer.log("❌ Error starting music capture: $e");
       }
     }
   }
@@ -33,7 +34,7 @@ class AudioCaptureService {
     if (isCapturing) {
       _audioCapture.stop();
       isCapturing = false;
-      print("🛑 Music Capture Stopped");
+      developer.log("🛑 Music Capture Stopped");
     }
   }
 }

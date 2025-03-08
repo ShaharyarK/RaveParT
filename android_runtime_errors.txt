@@ -1,0 +1,640 @@
+03-08 07:40:56.259 E/AndroidRuntime( 5328): FATAL EXCEPTION: main
+03-08 07:40:56.259 E/AndroidRuntime( 5328): Process: com.innov8.ravepart.dev, PID: 5328
+03-08 07:40:56.259 E/AndroidRuntime( 5328): java.lang.RuntimeException: Unable to get provider com.google.android.gms.ads.MobileAdsInitProvider: java.lang.IllegalStateException: 
+03-08 07:40:56.259 E/AndroidRuntime( 5328): 
+03-08 07:40:56.259 E/AndroidRuntime( 5328): ******************************************************************************
+03-08 07:40:56.259 E/AndroidRuntime( 5328): * Invalid application ID. Follow instructions here:                          *
+03-08 07:40:56.259 E/AndroidRuntime( 5328): * https://googlemobileadssdk.page.link/admob-android-update-manifest         *
+03-08 07:40:56.259 E/AndroidRuntime( 5328): * to find your app ID.                                                       *
+03-08 07:40:56.259 E/AndroidRuntime( 5328): * Google Ad Manager publishers should follow instructions here:              *
+03-08 07:40:56.259 E/AndroidRuntime( 5328): * https://googlemobileadssdk.page.link/ad-manager-android-update-manifest.   *
+03-08 07:40:56.259 E/AndroidRuntime( 5328): ******************************************************************************
+03-08 07:40:56.259 E/AndroidRuntime( 5328): 
+03-08 07:40:56.259 E/AndroidRuntime( 5328): 
+03-08 07:40:56.259 E/AndroidRuntime( 5328): 	at android.app.ActivityThread.installProvider(ActivityThread.java:7770)
+03-08 07:40:56.259 E/AndroidRuntime( 5328): 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:7276)
+03-08 07:40:56.259 E/AndroidRuntime( 5328): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6983)
+03-08 07:40:56.259 E/AndroidRuntime( 5328): 	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
+03-08 07:40:56.259 E/AndroidRuntime( 5328): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2236)
+03-08 07:40:56.259 E/AndroidRuntime( 5328): 	at android.os.Handler.dispatchMessage(Handler.java:106)
+03-08 07:40:56.259 E/AndroidRuntime( 5328): 	at android.os.Looper.loopOnce(Looper.java:205)
+03-08 07:40:56.259 E/AndroidRuntime( 5328): 	at android.os.Looper.loop(Looper.java:294)
+03-08 07:40:56.259 E/AndroidRuntime( 5328): 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+03-08 07:40:56.259 E/AndroidRuntime( 5328): 	at java.lang.reflect.Method.invoke(Native Method)
+03-08 07:40:56.259 E/AndroidRuntime( 5328): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+03-08 07:40:56.259 E/AndroidRuntime( 5328): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+03-08 07:40:56.259 E/AndroidRuntime( 5328): Caused by: java.lang.IllegalStateException: 
+03-08 07:40:56.259 E/AndroidRuntime( 5328): 
+03-08 07:40:56.259 E/AndroidRuntime( 5328): ******************************************************************************
+03-08 07:40:56.259 E/AndroidRuntime( 5328): * Invalid application ID. Follow instructions here:                          *
+03-08 07:40:56.259 E/AndroidRuntime( 5328): * https://googlemobileadssdk.page.link/admob-android-update-manifest         *
+03-08 07:40:56.259 E/AndroidRuntime( 5328): * to find your app ID.                                                       *
+03-08 07:40:56.259 E/AndroidRuntime( 5328): * Google Ad Manager publishers should follow instructions here:              *
+03-08 07:40:56.259 E/AndroidRuntime( 5328): * https://googlemobileadssdk.page.link/ad-manager-android-update-manifest.   *
+03-08 07:40:56.259 E/AndroidRuntime( 5328): ******************************************************************************
+03-08 07:40:56.259 E/AndroidRuntime( 5328): 
+03-08 07:40:56.259 E/AndroidRuntime( 5328): 
+03-08 07:40:56.259 E/AndroidRuntime( 5328): 	at com.google.android.gms.ads.internal.client.zzey.attachInfo(com.google.android.gms:play-services-ads-lite@@23.6.0:15)
+03-08 07:40:56.259 E/AndroidRuntime( 5328): 	at com.google.android.gms.ads.MobileAdsInitProvider.attachInfo(com.google.android.gms:play-services-ads-lite@@23.6.0:1)
+03-08 07:40:56.259 E/AndroidRuntime( 5328): 	at android.app.ActivityThread.installProvider(ActivityThread.java:7765)
+03-08 07:40:56.259 E/AndroidRuntime( 5328): 	... 11 more
+03-08 07:40:59.959 E/AndroidRuntime( 5367): FATAL EXCEPTION: main
+03-08 07:40:59.959 E/AndroidRuntime( 5367): Process: com.innov8.ravepart.dev, PID: 5367
+03-08 07:40:59.959 E/AndroidRuntime( 5367): java.lang.RuntimeException: Unable to get provider com.google.android.gms.ads.MobileAdsInitProvider: java.lang.IllegalStateException: 
+03-08 07:40:59.959 E/AndroidRuntime( 5367): 
+03-08 07:40:59.959 E/AndroidRuntime( 5367): ******************************************************************************
+03-08 07:40:59.959 E/AndroidRuntime( 5367): * Invalid application ID. Follow instructions here:                          *
+03-08 07:40:59.959 E/AndroidRuntime( 5367): * https://googlemobileadssdk.page.link/admob-android-update-manifest         *
+03-08 07:40:59.959 E/AndroidRuntime( 5367): * to find your app ID.                                                       *
+03-08 07:40:59.959 E/AndroidRuntime( 5367): * Google Ad Manager publishers should follow instructions here:              *
+03-08 07:40:59.959 E/AndroidRuntime( 5367): * https://googlemobileadssdk.page.link/ad-manager-android-update-manifest.   *
+03-08 07:40:59.959 E/AndroidRuntime( 5367): ******************************************************************************
+03-08 07:40:59.959 E/AndroidRuntime( 5367): 
+03-08 07:40:59.959 E/AndroidRuntime( 5367): 
+03-08 07:40:59.959 E/AndroidRuntime( 5367): 	at android.app.ActivityThread.installProvider(ActivityThread.java:7770)
+03-08 07:40:59.959 E/AndroidRuntime( 5367): 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:7276)
+03-08 07:40:59.959 E/AndroidRuntime( 5367): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6983)
+03-08 07:40:59.959 E/AndroidRuntime( 5367): 	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
+03-08 07:40:59.959 E/AndroidRuntime( 5367): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2236)
+03-08 07:40:59.959 E/AndroidRuntime( 5367): 	at android.os.Handler.dispatchMessage(Handler.java:106)
+03-08 07:40:59.959 E/AndroidRuntime( 5367): 	at android.os.Looper.loopOnce(Looper.java:205)
+03-08 07:40:59.959 E/AndroidRuntime( 5367): 	at android.os.Looper.loop(Looper.java:294)
+03-08 07:40:59.959 E/AndroidRuntime( 5367): 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+03-08 07:40:59.959 E/AndroidRuntime( 5367): 	at java.lang.reflect.Method.invoke(Native Method)
+03-08 07:40:59.959 E/AndroidRuntime( 5367): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+03-08 07:40:59.959 E/AndroidRuntime( 5367): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+03-08 07:40:59.959 E/AndroidRuntime( 5367): Caused by: java.lang.IllegalStateException: 
+03-08 07:40:59.959 E/AndroidRuntime( 5367): 
+03-08 07:40:59.959 E/AndroidRuntime( 5367): ******************************************************************************
+03-08 07:40:59.959 E/AndroidRuntime( 5367): * Invalid application ID. Follow instructions here:                          *
+03-08 07:40:59.959 E/AndroidRuntime( 5367): * https://googlemobileadssdk.page.link/admob-android-update-manifest         *
+03-08 07:40:59.959 E/AndroidRuntime( 5367): * to find your app ID.                                                       *
+03-08 07:40:59.959 E/AndroidRuntime( 5367): * Google Ad Manager publishers should follow instructions here:              *
+03-08 07:40:59.959 E/AndroidRuntime( 5367): * https://googlemobileadssdk.page.link/ad-manager-android-update-manifest.   *
+03-08 07:40:59.959 E/AndroidRuntime( 5367): ******************************************************************************
+03-08 07:40:59.959 E/AndroidRuntime( 5367): 
+03-08 07:40:59.959 E/AndroidRuntime( 5367): 
+03-08 07:40:59.959 E/AndroidRuntime( 5367): 	at com.google.android.gms.ads.internal.client.zzey.attachInfo(com.google.android.gms:play-services-ads-lite@@23.6.0:15)
+03-08 07:40:59.959 E/AndroidRuntime( 5367): 	at com.google.android.gms.ads.MobileAdsInitProvider.attachInfo(com.google.android.gms:play-services-ads-lite@@23.6.0:1)
+03-08 07:40:59.959 E/AndroidRuntime( 5367): 	at android.app.ActivityThread.installProvider(ActivityThread.java:7765)
+03-08 07:40:59.959 E/AndroidRuntime( 5367): 	... 11 more
+03-08 07:41:41.625 E/AndroidRuntime( 5453): FATAL EXCEPTION: main
+03-08 07:41:41.625 E/AndroidRuntime( 5453): Process: com.innov8.ravepart.dev, PID: 5453
+03-08 07:41:41.625 E/AndroidRuntime( 5453): java.lang.RuntimeException: Unable to get provider com.google.android.gms.ads.MobileAdsInitProvider: java.lang.IllegalStateException: 
+03-08 07:41:41.625 E/AndroidRuntime( 5453): 
+03-08 07:41:41.625 E/AndroidRuntime( 5453): ******************************************************************************
+03-08 07:41:41.625 E/AndroidRuntime( 5453): * Invalid application ID. Follow instructions here:                          *
+03-08 07:41:41.625 E/AndroidRuntime( 5453): * https://googlemobileadssdk.page.link/admob-android-update-manifest         *
+03-08 07:41:41.625 E/AndroidRuntime( 5453): * to find your app ID.                                                       *
+03-08 07:41:41.625 E/AndroidRuntime( 5453): * Google Ad Manager publishers should follow instructions here:              *
+03-08 07:41:41.625 E/AndroidRuntime( 5453): * https://googlemobileadssdk.page.link/ad-manager-android-update-manifest.   *
+03-08 07:41:41.625 E/AndroidRuntime( 5453): ******************************************************************************
+03-08 07:41:41.625 E/AndroidRuntime( 5453): 
+03-08 07:41:41.625 E/AndroidRuntime( 5453): 
+03-08 07:41:41.625 E/AndroidRuntime( 5453): 	at android.app.ActivityThread.installProvider(ActivityThread.java:7770)
+03-08 07:41:41.625 E/AndroidRuntime( 5453): 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:7276)
+03-08 07:41:41.625 E/AndroidRuntime( 5453): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6983)
+03-08 07:41:41.625 E/AndroidRuntime( 5453): 	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
+03-08 07:41:41.625 E/AndroidRuntime( 5453): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2236)
+03-08 07:41:41.625 E/AndroidRuntime( 5453): 	at android.os.Handler.dispatchMessage(Handler.java:106)
+03-08 07:41:41.625 E/AndroidRuntime( 5453): 	at android.os.Looper.loopOnce(Looper.java:205)
+03-08 07:41:41.625 E/AndroidRuntime( 5453): 	at android.os.Looper.loop(Looper.java:294)
+03-08 07:41:41.625 E/AndroidRuntime( 5453): 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+03-08 07:41:41.625 E/AndroidRuntime( 5453): 	at java.lang.reflect.Method.invoke(Native Method)
+03-08 07:41:41.625 E/AndroidRuntime( 5453): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+03-08 07:41:41.625 E/AndroidRuntime( 5453): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+03-08 07:41:41.625 E/AndroidRuntime( 5453): Caused by: java.lang.IllegalStateException: 
+03-08 07:41:41.625 E/AndroidRuntime( 5453): 
+03-08 07:41:41.625 E/AndroidRuntime( 5453): ******************************************************************************
+03-08 07:41:41.625 E/AndroidRuntime( 5453): * Invalid application ID. Follow instructions here:                          *
+03-08 07:41:41.625 E/AndroidRuntime( 5453): * https://googlemobileadssdk.page.link/admob-android-update-manifest         *
+03-08 07:41:41.625 E/AndroidRuntime( 5453): * to find your app ID.                                                       *
+03-08 07:41:41.625 E/AndroidRuntime( 5453): * Google Ad Manager publishers should follow instructions here:              *
+03-08 07:41:41.625 E/AndroidRuntime( 5453): * https://googlemobileadssdk.page.link/ad-manager-android-update-manifest.   *
+03-08 07:41:41.625 E/AndroidRuntime( 5453): ******************************************************************************
+03-08 07:41:41.625 E/AndroidRuntime( 5453): 
+03-08 07:41:41.625 E/AndroidRuntime( 5453): 
+03-08 07:41:41.625 E/AndroidRuntime( 5453): 	at com.google.android.gms.ads.internal.client.zzey.attachInfo(com.google.android.gms:play-services-ads-lite@@23.6.0:15)
+03-08 07:41:41.625 E/AndroidRuntime( 5453): 	at com.google.android.gms.ads.MobileAdsInitProvider.attachInfo(com.google.android.gms:play-services-ads-lite@@23.6.0:1)
+03-08 07:41:41.625 E/AndroidRuntime( 5453): 	at android.app.ActivityThread.installProvider(ActivityThread.java:7765)
+03-08 07:41:41.625 E/AndroidRuntime( 5453): 	... 11 more
+03-08 07:42:58.190 E/AndroidRuntime( 5585): FATAL EXCEPTION: main
+03-08 07:42:58.190 E/AndroidRuntime( 5585): Process: com.innov8.ravepart.dev, PID: 5585
+03-08 07:42:58.190 E/AndroidRuntime( 5585): java.lang.RuntimeException: Unable to get provider com.google.android.gms.ads.MobileAdsInitProvider: java.lang.IllegalStateException: 
+03-08 07:42:58.190 E/AndroidRuntime( 5585): 
+03-08 07:42:58.190 E/AndroidRuntime( 5585): ******************************************************************************
+03-08 07:42:58.190 E/AndroidRuntime( 5585): * Invalid application ID. Follow instructions here:                          *
+03-08 07:42:58.190 E/AndroidRuntime( 5585): * https://googlemobileadssdk.page.link/admob-android-update-manifest         *
+03-08 07:42:58.190 E/AndroidRuntime( 5585): * to find your app ID.                                                       *
+03-08 07:42:58.190 E/AndroidRuntime( 5585): * Google Ad Manager publishers should follow instructions here:              *
+03-08 07:42:58.190 E/AndroidRuntime( 5585): * https://googlemobileadssdk.page.link/ad-manager-android-update-manifest.   *
+03-08 07:42:58.190 E/AndroidRuntime( 5585): ******************************************************************************
+03-08 07:42:58.190 E/AndroidRuntime( 5585): 
+03-08 07:42:58.190 E/AndroidRuntime( 5585): 
+03-08 07:42:58.190 E/AndroidRuntime( 5585): 	at android.app.ActivityThread.installProvider(ActivityThread.java:7770)
+03-08 07:42:58.190 E/AndroidRuntime( 5585): 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:7276)
+03-08 07:42:58.190 E/AndroidRuntime( 5585): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6983)
+03-08 07:42:58.190 E/AndroidRuntime( 5585): 	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
+03-08 07:42:58.190 E/AndroidRuntime( 5585): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2236)
+03-08 07:42:58.190 E/AndroidRuntime( 5585): 	at android.os.Handler.dispatchMessage(Handler.java:106)
+03-08 07:42:58.190 E/AndroidRuntime( 5585): 	at android.os.Looper.loopOnce(Looper.java:205)
+03-08 07:42:58.190 E/AndroidRuntime( 5585): 	at android.os.Looper.loop(Looper.java:294)
+03-08 07:42:58.190 E/AndroidRuntime( 5585): 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+03-08 07:42:58.190 E/AndroidRuntime( 5585): 	at java.lang.reflect.Method.invoke(Native Method)
+03-08 07:42:58.190 E/AndroidRuntime( 5585): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+03-08 07:42:58.190 E/AndroidRuntime( 5585): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+03-08 07:42:58.190 E/AndroidRuntime( 5585): Caused by: java.lang.IllegalStateException: 
+03-08 07:42:58.190 E/AndroidRuntime( 5585): 
+03-08 07:42:58.190 E/AndroidRuntime( 5585): ******************************************************************************
+03-08 07:42:58.190 E/AndroidRuntime( 5585): * Invalid application ID. Follow instructions here:                          *
+03-08 07:42:58.190 E/AndroidRuntime( 5585): * https://googlemobileadssdk.page.link/admob-android-update-manifest         *
+03-08 07:42:58.190 E/AndroidRuntime( 5585): * to find your app ID.                                                       *
+03-08 07:42:58.190 E/AndroidRuntime( 5585): * Google Ad Manager publishers should follow instructions here:              *
+03-08 07:42:58.190 E/AndroidRuntime( 5585): * https://googlemobileadssdk.page.link/ad-manager-android-update-manifest.   *
+03-08 07:42:58.190 E/AndroidRuntime( 5585): ******************************************************************************
+03-08 07:42:58.190 E/AndroidRuntime( 5585): 
+03-08 07:42:58.190 E/AndroidRuntime( 5585): 
+03-08 07:42:58.190 E/AndroidRuntime( 5585): 	at com.google.android.gms.ads.internal.client.zzey.attachInfo(com.google.android.gms:play-services-ads-lite@@23.6.0:15)
+03-08 07:42:58.190 E/AndroidRuntime( 5585): 	at com.google.android.gms.ads.MobileAdsInitProvider.attachInfo(com.google.android.gms:play-services-ads-lite@@23.6.0:1)
+03-08 07:42:58.190 E/AndroidRuntime( 5585): 	at android.app.ActivityThread.installProvider(ActivityThread.java:7765)
+03-08 07:42:58.190 E/AndroidRuntime( 5585): 	... 11 more
+03-08 07:43:36.873 E/AndroidRuntime( 5701): FATAL EXCEPTION: main
+03-08 07:43:36.873 E/AndroidRuntime( 5701): Process: com.innov8.ravepart.dev, PID: 5701
+03-08 07:43:36.873 E/AndroidRuntime( 5701): java.lang.RuntimeException: Unable to get provider com.google.android.gms.ads.MobileAdsInitProvider: java.lang.IllegalStateException: 
+03-08 07:43:36.873 E/AndroidRuntime( 5701): 
+03-08 07:43:36.873 E/AndroidRuntime( 5701): ******************************************************************************
+03-08 07:43:36.873 E/AndroidRuntime( 5701): * Invalid application ID. Follow instructions here:                          *
+03-08 07:43:36.873 E/AndroidRuntime( 5701): * https://googlemobileadssdk.page.link/admob-android-update-manifest         *
+03-08 07:43:36.873 E/AndroidRuntime( 5701): * to find your app ID.                                                       *
+03-08 07:43:36.873 E/AndroidRuntime( 5701): * Google Ad Manager publishers should follow instructions here:              *
+03-08 07:43:36.873 E/AndroidRuntime( 5701): * https://googlemobileadssdk.page.link/ad-manager-android-update-manifest.   *
+03-08 07:43:36.873 E/AndroidRuntime( 5701): ******************************************************************************
+03-08 07:43:36.873 E/AndroidRuntime( 5701): 
+03-08 07:43:36.873 E/AndroidRuntime( 5701): 
+03-08 07:43:36.873 E/AndroidRuntime( 5701): 	at android.app.ActivityThread.installProvider(ActivityThread.java:7770)
+03-08 07:43:36.873 E/AndroidRuntime( 5701): 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:7276)
+03-08 07:43:36.873 E/AndroidRuntime( 5701): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6983)
+03-08 07:43:36.873 E/AndroidRuntime( 5701): 	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
+03-08 07:43:36.873 E/AndroidRuntime( 5701): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2236)
+03-08 07:43:36.873 E/AndroidRuntime( 5701): 	at android.os.Handler.dispatchMessage(Handler.java:106)
+03-08 07:43:36.873 E/AndroidRuntime( 5701): 	at android.os.Looper.loopOnce(Looper.java:205)
+03-08 07:43:36.873 E/AndroidRuntime( 5701): 	at android.os.Looper.loop(Looper.java:294)
+03-08 07:43:36.873 E/AndroidRuntime( 5701): 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+03-08 07:43:36.873 E/AndroidRuntime( 5701): 	at java.lang.reflect.Method.invoke(Native Method)
+03-08 07:43:36.873 E/AndroidRuntime( 5701): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+03-08 07:43:36.873 E/AndroidRuntime( 5701): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+03-08 07:43:36.873 E/AndroidRuntime( 5701): Caused by: java.lang.IllegalStateException: 
+03-08 07:43:36.873 E/AndroidRuntime( 5701): 
+03-08 07:43:36.873 E/AndroidRuntime( 5701): ******************************************************************************
+03-08 07:43:36.873 E/AndroidRuntime( 5701): * Invalid application ID. Follow instructions here:                          *
+03-08 07:43:36.873 E/AndroidRuntime( 5701): * https://googlemobileadssdk.page.link/admob-android-update-manifest         *
+03-08 07:43:36.873 E/AndroidRuntime( 5701): * to find your app ID.                                                       *
+03-08 07:43:36.873 E/AndroidRuntime( 5701): * Google Ad Manager publishers should follow instructions here:              *
+03-08 07:43:36.873 E/AndroidRuntime( 5701): * https://googlemobileadssdk.page.link/ad-manager-android-update-manifest.   *
+03-08 07:43:36.873 E/AndroidRuntime( 5701): ******************************************************************************
+03-08 07:43:36.873 E/AndroidRuntime( 5701): 
+03-08 07:43:36.873 E/AndroidRuntime( 5701): 
+03-08 07:43:36.873 E/AndroidRuntime( 5701): 	at com.google.android.gms.ads.internal.client.zzey.attachInfo(com.google.android.gms:play-services-ads-lite@@23.6.0:15)
+03-08 07:43:36.873 E/AndroidRuntime( 5701): 	at com.google.android.gms.ads.MobileAdsInitProvider.attachInfo(com.google.android.gms:play-services-ads-lite@@23.6.0:1)
+03-08 07:43:36.873 E/AndroidRuntime( 5701): 	at android.app.ActivityThread.installProvider(ActivityThread.java:7765)
+03-08 07:43:36.873 E/AndroidRuntime( 5701): 	... 11 more
+03-08 07:44:05.459 E/AndroidRuntime( 5983): FATAL EXCEPTION: main
+03-08 07:44:05.459 E/AndroidRuntime( 5983): Process: com.innov8.ravepart.dev, PID: 5983
+03-08 07:44:05.459 E/AndroidRuntime( 5983): java.lang.RuntimeException: Unable to get provider com.google.android.gms.ads.MobileAdsInitProvider: java.lang.IllegalStateException: 
+03-08 07:44:05.459 E/AndroidRuntime( 5983): 
+03-08 07:44:05.459 E/AndroidRuntime( 5983): ******************************************************************************
+03-08 07:44:05.459 E/AndroidRuntime( 5983): * Invalid application ID. Follow instructions here:                          *
+03-08 07:44:05.459 E/AndroidRuntime( 5983): * https://googlemobileadssdk.page.link/admob-android-update-manifest         *
+03-08 07:44:05.459 E/AndroidRuntime( 5983): * to find your app ID.                                                       *
+03-08 07:44:05.459 E/AndroidRuntime( 5983): * Google Ad Manager publishers should follow instructions here:              *
+03-08 07:44:05.459 E/AndroidRuntime( 5983): * https://googlemobileadssdk.page.link/ad-manager-android-update-manifest.   *
+03-08 07:44:05.459 E/AndroidRuntime( 5983): ******************************************************************************
+03-08 07:44:05.459 E/AndroidRuntime( 5983): 
+03-08 07:44:05.459 E/AndroidRuntime( 5983): 
+03-08 07:44:05.459 E/AndroidRuntime( 5983): 	at android.app.ActivityThread.installProvider(ActivityThread.java:7770)
+03-08 07:44:05.459 E/AndroidRuntime( 5983): 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:7276)
+03-08 07:44:05.459 E/AndroidRuntime( 5983): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6983)
+03-08 07:44:05.459 E/AndroidRuntime( 5983): 	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
+03-08 07:44:05.459 E/AndroidRuntime( 5983): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2236)
+03-08 07:44:05.459 E/AndroidRuntime( 5983): 	at android.os.Handler.dispatchMessage(Handler.java:106)
+03-08 07:44:05.459 E/AndroidRuntime( 5983): 	at android.os.Looper.loopOnce(Looper.java:205)
+03-08 07:44:05.459 E/AndroidRuntime( 5983): 	at android.os.Looper.loop(Looper.java:294)
+03-08 07:44:05.459 E/AndroidRuntime( 5983): 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+03-08 07:44:05.459 E/AndroidRuntime( 5983): 	at java.lang.reflect.Method.invoke(Native Method)
+03-08 07:44:05.459 E/AndroidRuntime( 5983): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+03-08 07:44:05.459 E/AndroidRuntime( 5983): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+03-08 07:44:05.459 E/AndroidRuntime( 5983): Caused by: java.lang.IllegalStateException: 
+03-08 07:44:05.459 E/AndroidRuntime( 5983): 
+03-08 07:44:05.459 E/AndroidRuntime( 5983): ******************************************************************************
+03-08 07:44:05.459 E/AndroidRuntime( 5983): * Invalid application ID. Follow instructions here:                          *
+03-08 07:44:05.459 E/AndroidRuntime( 5983): * https://googlemobileadssdk.page.link/admob-android-update-manifest         *
+03-08 07:44:05.459 E/AndroidRuntime( 5983): * to find your app ID.                                                       *
+03-08 07:44:05.459 E/AndroidRuntime( 5983): * Google Ad Manager publishers should follow instructions here:              *
+03-08 07:44:05.459 E/AndroidRuntime( 5983): * https://googlemobileadssdk.page.link/ad-manager-android-update-manifest.   *
+03-08 07:44:05.459 E/AndroidRuntime( 5983): ******************************************************************************
+03-08 07:44:05.459 E/AndroidRuntime( 5983): 
+03-08 07:44:05.459 E/AndroidRuntime( 5983): 
+03-08 07:44:05.459 E/AndroidRuntime( 5983): 	at com.google.android.gms.ads.internal.client.zzey.attachInfo(com.google.android.gms:play-services-ads-lite@@23.6.0:15)
+03-08 07:44:05.459 E/AndroidRuntime( 5983): 	at com.google.android.gms.ads.MobileAdsInitProvider.attachInfo(com.google.android.gms:play-services-ads-lite@@23.6.0:1)
+03-08 07:44:05.459 E/AndroidRuntime( 5983): 	at android.app.ActivityThread.installProvider(ActivityThread.java:7765)
+03-08 07:44:05.459 E/AndroidRuntime( 5983): 	... 11 more
+03-08 07:44:10.055 E/AndroidRuntime( 6023): FATAL EXCEPTION: main
+03-08 07:44:10.055 E/AndroidRuntime( 6023): Process: com.innov8.ravepart.dev, PID: 6023
+03-08 07:44:10.055 E/AndroidRuntime( 6023): java.lang.RuntimeException: Unable to get provider com.google.android.gms.ads.MobileAdsInitProvider: java.lang.IllegalStateException: 
+03-08 07:44:10.055 E/AndroidRuntime( 6023): 
+03-08 07:44:10.055 E/AndroidRuntime( 6023): ******************************************************************************
+03-08 07:44:10.055 E/AndroidRuntime( 6023): * Invalid application ID. Follow instructions here:                          *
+03-08 07:44:10.055 E/AndroidRuntime( 6023): * https://googlemobileadssdk.page.link/admob-android-update-manifest         *
+03-08 07:44:10.055 E/AndroidRuntime( 6023): * to find your app ID.                                                       *
+03-08 07:44:10.055 E/AndroidRuntime( 6023): * Google Ad Manager publishers should follow instructions here:              *
+03-08 07:44:10.055 E/AndroidRuntime( 6023): * https://googlemobileadssdk.page.link/ad-manager-android-update-manifest.   *
+03-08 07:44:10.055 E/AndroidRuntime( 6023): ******************************************************************************
+03-08 07:44:10.055 E/AndroidRuntime( 6023): 
+03-08 07:44:10.055 E/AndroidRuntime( 6023): 
+03-08 07:44:10.055 E/AndroidRuntime( 6023): 	at android.app.ActivityThread.installProvider(ActivityThread.java:7770)
+03-08 07:44:10.055 E/AndroidRuntime( 6023): 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:7276)
+03-08 07:44:10.055 E/AndroidRuntime( 6023): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6983)
+03-08 07:44:10.055 E/AndroidRuntime( 6023): 	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
+03-08 07:44:10.055 E/AndroidRuntime( 6023): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2236)
+03-08 07:44:10.055 E/AndroidRuntime( 6023): 	at android.os.Handler.dispatchMessage(Handler.java:106)
+03-08 07:44:10.055 E/AndroidRuntime( 6023): 	at android.os.Looper.loopOnce(Looper.java:205)
+03-08 07:44:10.055 E/AndroidRuntime( 6023): 	at android.os.Looper.loop(Looper.java:294)
+03-08 07:44:10.055 E/AndroidRuntime( 6023): 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+03-08 07:44:10.055 E/AndroidRuntime( 6023): 	at java.lang.reflect.Method.invoke(Native Method)
+03-08 07:44:10.055 E/AndroidRuntime( 6023): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+03-08 07:44:10.055 E/AndroidRuntime( 6023): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+03-08 07:44:10.055 E/AndroidRuntime( 6023): Caused by: java.lang.IllegalStateException: 
+03-08 07:44:10.055 E/AndroidRuntime( 6023): 
+03-08 07:44:10.055 E/AndroidRuntime( 6023): ******************************************************************************
+03-08 07:44:10.055 E/AndroidRuntime( 6023): * Invalid application ID. Follow instructions here:                          *
+03-08 07:44:10.055 E/AndroidRuntime( 6023): * https://googlemobileadssdk.page.link/admob-android-update-manifest         *
+03-08 07:44:10.055 E/AndroidRuntime( 6023): * to find your app ID.                                                       *
+03-08 07:44:10.055 E/AndroidRuntime( 6023): * Google Ad Manager publishers should follow instructions here:              *
+03-08 07:44:10.055 E/AndroidRuntime( 6023): * https://googlemobileadssdk.page.link/ad-manager-android-update-manifest.   *
+03-08 07:44:10.055 E/AndroidRuntime( 6023): ******************************************************************************
+03-08 07:44:10.055 E/AndroidRuntime( 6023): 
+03-08 07:44:10.055 E/AndroidRuntime( 6023): 
+03-08 07:44:10.055 E/AndroidRuntime( 6023): 	at com.google.android.gms.ads.internal.client.zzey.attachInfo(com.google.android.gms:play-services-ads-lite@@23.6.0:15)
+03-08 07:44:10.055 E/AndroidRuntime( 6023): 	at com.google.android.gms.ads.MobileAdsInitProvider.attachInfo(com.google.android.gms:play-services-ads-lite@@23.6.0:1)
+03-08 07:44:10.055 E/AndroidRuntime( 6023): 	at android.app.ActivityThread.installProvider(ActivityThread.java:7765)
+03-08 07:44:10.055 E/AndroidRuntime( 6023): 	... 11 more
+03-08 07:44:11.856 E/AndroidRuntime( 6045): FATAL EXCEPTION: main
+03-08 07:44:11.856 E/AndroidRuntime( 6045): Process: com.innov8.ravepart.dev, PID: 6045
+03-08 07:44:11.856 E/AndroidRuntime( 6045): java.lang.RuntimeException: Unable to get provider com.google.android.gms.ads.MobileAdsInitProvider: java.lang.IllegalStateException: 
+03-08 07:44:11.856 E/AndroidRuntime( 6045): 
+03-08 07:44:11.856 E/AndroidRuntime( 6045): ******************************************************************************
+03-08 07:44:11.856 E/AndroidRuntime( 6045): * Invalid application ID. Follow instructions here:                          *
+03-08 07:44:11.856 E/AndroidRuntime( 6045): * https://googlemobileadssdk.page.link/admob-android-update-manifest         *
+03-08 07:44:11.856 E/AndroidRuntime( 6045): * to find your app ID.                                                       *
+03-08 07:44:11.856 E/AndroidRuntime( 6045): * Google Ad Manager publishers should follow instructions here:              *
+03-08 07:44:11.856 E/AndroidRuntime( 6045): * https://googlemobileadssdk.page.link/ad-manager-android-update-manifest.   *
+03-08 07:44:11.856 E/AndroidRuntime( 6045): ******************************************************************************
+03-08 07:44:11.856 E/AndroidRuntime( 6045): 
+03-08 07:44:11.856 E/AndroidRuntime( 6045): 
+03-08 07:44:11.856 E/AndroidRuntime( 6045): 	at android.app.ActivityThread.installProvider(ActivityThread.java:7770)
+03-08 07:44:11.856 E/AndroidRuntime( 6045): 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:7276)
+03-08 07:44:11.856 E/AndroidRuntime( 6045): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6983)
+03-08 07:44:11.856 E/AndroidRuntime( 6045): 	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
+03-08 07:44:11.856 E/AndroidRuntime( 6045): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2236)
+03-08 07:44:11.856 E/AndroidRuntime( 6045): 	at android.os.Handler.dispatchMessage(Handler.java:106)
+03-08 07:44:11.856 E/AndroidRuntime( 6045): 	at android.os.Looper.loopOnce(Looper.java:205)
+03-08 07:44:11.856 E/AndroidRuntime( 6045): 	at android.os.Looper.loop(Looper.java:294)
+03-08 07:44:11.856 E/AndroidRuntime( 6045): 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+03-08 07:44:11.856 E/AndroidRuntime( 6045): 	at java.lang.reflect.Method.invoke(Native Method)
+03-08 07:44:11.856 E/AndroidRuntime( 6045): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+03-08 07:44:11.856 E/AndroidRuntime( 6045): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+03-08 07:44:11.856 E/AndroidRuntime( 6045): Caused by: java.lang.IllegalStateException: 
+03-08 07:44:11.856 E/AndroidRuntime( 6045): 
+03-08 07:44:11.856 E/AndroidRuntime( 6045): ******************************************************************************
+03-08 07:44:11.856 E/AndroidRuntime( 6045): * Invalid application ID. Follow instructions here:                          *
+03-08 07:44:11.856 E/AndroidRuntime( 6045): * https://googlemobileadssdk.page.link/admob-android-update-manifest         *
+03-08 07:44:11.856 E/AndroidRuntime( 6045): * to find your app ID.                                                       *
+03-08 07:44:11.856 E/AndroidRuntime( 6045): * Google Ad Manager publishers should follow instructions here:              *
+03-08 07:44:11.856 E/AndroidRuntime( 6045): * https://googlemobileadssdk.page.link/ad-manager-android-update-manifest.   *
+03-08 07:44:11.856 E/AndroidRuntime( 6045): ******************************************************************************
+03-08 07:44:11.856 E/AndroidRuntime( 6045): 
+03-08 07:44:11.856 E/AndroidRuntime( 6045): 
+03-08 07:44:11.856 E/AndroidRuntime( 6045): 	at com.google.android.gms.ads.internal.client.zzey.attachInfo(com.google.android.gms:play-services-ads-lite@@23.6.0:15)
+03-08 07:44:11.856 E/AndroidRuntime( 6045): 	at com.google.android.gms.ads.MobileAdsInitProvider.attachInfo(com.google.android.gms:play-services-ads-lite@@23.6.0:1)
+03-08 07:44:11.856 E/AndroidRuntime( 6045): 	at android.app.ActivityThread.installProvider(ActivityThread.java:7765)
+03-08 07:44:11.856 E/AndroidRuntime( 6045): 	... 11 more
+03-08 07:44:13.380 E/AndroidRuntime( 6061): FATAL EXCEPTION: main
+03-08 07:44:13.380 E/AndroidRuntime( 6061): Process: com.innov8.ravepart.dev, PID: 6061
+03-08 07:44:13.380 E/AndroidRuntime( 6061): java.lang.RuntimeException: Unable to get provider com.google.android.gms.ads.MobileAdsInitProvider: java.lang.IllegalStateException: 
+03-08 07:44:13.380 E/AndroidRuntime( 6061): 
+03-08 07:44:13.380 E/AndroidRuntime( 6061): ******************************************************************************
+03-08 07:44:13.380 E/AndroidRuntime( 6061): * Invalid application ID. Follow instructions here:                          *
+03-08 07:44:13.380 E/AndroidRuntime( 6061): * https://googlemobileadssdk.page.link/admob-android-update-manifest         *
+03-08 07:44:13.380 E/AndroidRuntime( 6061): * to find your app ID.                                                       *
+03-08 07:44:13.380 E/AndroidRuntime( 6061): * Google Ad Manager publishers should follow instructions here:              *
+03-08 07:44:13.380 E/AndroidRuntime( 6061): * https://googlemobileadssdk.page.link/ad-manager-android-update-manifest.   *
+03-08 07:44:13.380 E/AndroidRuntime( 6061): ******************************************************************************
+03-08 07:44:13.380 E/AndroidRuntime( 6061): 
+03-08 07:44:13.380 E/AndroidRuntime( 6061): 
+03-08 07:44:13.380 E/AndroidRuntime( 6061): 	at android.app.ActivityThread.installProvider(ActivityThread.java:7770)
+03-08 07:44:13.380 E/AndroidRuntime( 6061): 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:7276)
+03-08 07:44:13.380 E/AndroidRuntime( 6061): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6983)
+03-08 07:44:13.380 E/AndroidRuntime( 6061): 	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
+03-08 07:44:13.380 E/AndroidRuntime( 6061): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2236)
+03-08 07:44:13.380 E/AndroidRuntime( 6061): 	at android.os.Handler.dispatchMessage(Handler.java:106)
+03-08 07:44:13.380 E/AndroidRuntime( 6061): 	at android.os.Looper.loopOnce(Looper.java:205)
+03-08 07:44:13.380 E/AndroidRuntime( 6061): 	at android.os.Looper.loop(Looper.java:294)
+03-08 07:44:13.380 E/AndroidRuntime( 6061): 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+03-08 07:44:13.380 E/AndroidRuntime( 6061): 	at java.lang.reflect.Method.invoke(Native Method)
+03-08 07:44:13.380 E/AndroidRuntime( 6061): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+03-08 07:44:13.380 E/AndroidRuntime( 6061): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+03-08 07:44:13.380 E/AndroidRuntime( 6061): Caused by: java.lang.IllegalStateException: 
+03-08 07:44:13.380 E/AndroidRuntime( 6061): 
+03-08 07:44:13.380 E/AndroidRuntime( 6061): ******************************************************************************
+03-08 07:44:13.380 E/AndroidRuntime( 6061): * Invalid application ID. Follow instructions here:                          *
+03-08 07:44:13.380 E/AndroidRuntime( 6061): * https://googlemobileadssdk.page.link/admob-android-update-manifest         *
+03-08 07:44:13.380 E/AndroidRuntime( 6061): * to find your app ID.                                                       *
+03-08 07:44:13.380 E/AndroidRuntime( 6061): * Google Ad Manager publishers should follow instructions here:              *
+03-08 07:44:13.380 E/AndroidRuntime( 6061): * https://googlemobileadssdk.page.link/ad-manager-android-update-manifest.   *
+03-08 07:44:13.380 E/AndroidRuntime( 6061): ******************************************************************************
+03-08 07:44:13.380 E/AndroidRuntime( 6061): 
+03-08 07:44:13.380 E/AndroidRuntime( 6061): 
+03-08 07:44:13.380 E/AndroidRuntime( 6061): 	at com.google.android.gms.ads.internal.client.zzey.attachInfo(com.google.android.gms:play-services-ads-lite@@23.6.0:15)
+03-08 07:44:13.380 E/AndroidRuntime( 6061): 	at com.google.android.gms.ads.MobileAdsInitProvider.attachInfo(com.google.android.gms:play-services-ads-lite@@23.6.0:1)
+03-08 07:44:13.380 E/AndroidRuntime( 6061): 	at android.app.ActivityThread.installProvider(ActivityThread.java:7765)
+03-08 07:44:13.380 E/AndroidRuntime( 6061): 	... 11 more
+03-08 07:44:14.424 E/AndroidRuntime( 6079): FATAL EXCEPTION: main
+03-08 07:44:14.424 E/AndroidRuntime( 6079): Process: com.innov8.ravepart.dev, PID: 6079
+03-08 07:44:14.424 E/AndroidRuntime( 6079): java.lang.RuntimeException: Unable to get provider com.google.android.gms.ads.MobileAdsInitProvider: java.lang.IllegalStateException: 
+03-08 07:44:14.424 E/AndroidRuntime( 6079): 
+03-08 07:44:14.424 E/AndroidRuntime( 6079): ******************************************************************************
+03-08 07:44:14.424 E/AndroidRuntime( 6079): * Invalid application ID. Follow instructions here:                          *
+03-08 07:44:14.424 E/AndroidRuntime( 6079): * https://googlemobileadssdk.page.link/admob-android-update-manifest         *
+03-08 07:44:14.424 E/AndroidRuntime( 6079): * to find your app ID.                                                       *
+03-08 07:44:14.424 E/AndroidRuntime( 6079): * Google Ad Manager publishers should follow instructions here:              *
+03-08 07:44:14.424 E/AndroidRuntime( 6079): * https://googlemobileadssdk.page.link/ad-manager-android-update-manifest.   *
+03-08 07:44:14.424 E/AndroidRuntime( 6079): ******************************************************************************
+03-08 07:44:14.424 E/AndroidRuntime( 6079): 
+03-08 07:44:14.424 E/AndroidRuntime( 6079): 
+03-08 07:44:14.424 E/AndroidRuntime( 6079): 	at android.app.ActivityThread.installProvider(ActivityThread.java:7770)
+03-08 07:44:14.424 E/AndroidRuntime( 6079): 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:7276)
+03-08 07:44:14.424 E/AndroidRuntime( 6079): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6983)
+03-08 07:44:14.424 E/AndroidRuntime( 6079): 	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
+03-08 07:44:14.424 E/AndroidRuntime( 6079): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2236)
+03-08 07:44:14.424 E/AndroidRuntime( 6079): 	at android.os.Handler.dispatchMessage(Handler.java:106)
+03-08 07:44:14.424 E/AndroidRuntime( 6079): 	at android.os.Looper.loopOnce(Looper.java:205)
+03-08 07:44:14.424 E/AndroidRuntime( 6079): 	at android.os.Looper.loop(Looper.java:294)
+03-08 07:44:14.424 E/AndroidRuntime( 6079): 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+03-08 07:44:14.424 E/AndroidRuntime( 6079): 	at java.lang.reflect.Method.invoke(Native Method)
+03-08 07:44:14.424 E/AndroidRuntime( 6079): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+03-08 07:44:14.424 E/AndroidRuntime( 6079): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+03-08 07:44:14.424 E/AndroidRuntime( 6079): Caused by: java.lang.IllegalStateException: 
+03-08 07:44:14.424 E/AndroidRuntime( 6079): 
+03-08 07:44:14.424 E/AndroidRuntime( 6079): ******************************************************************************
+03-08 07:44:14.424 E/AndroidRuntime( 6079): * Invalid application ID. Follow instructions here:                          *
+03-08 07:44:14.424 E/AndroidRuntime( 6079): * https://googlemobileadssdk.page.link/admob-android-update-manifest         *
+03-08 07:44:14.424 E/AndroidRuntime( 6079): * to find your app ID.                                                       *
+03-08 07:44:14.424 E/AndroidRuntime( 6079): * Google Ad Manager publishers should follow instructions here:              *
+03-08 07:44:14.424 E/AndroidRuntime( 6079): * https://googlemobileadssdk.page.link/ad-manager-android-update-manifest.   *
+03-08 07:44:14.424 E/AndroidRuntime( 6079): ******************************************************************************
+03-08 07:44:14.424 E/AndroidRuntime( 6079): 
+03-08 07:44:14.424 E/AndroidRuntime( 6079): 
+03-08 07:44:14.424 E/AndroidRuntime( 6079): 	at com.google.android.gms.ads.internal.client.zzey.attachInfo(com.google.android.gms:play-services-ads-lite@@23.6.0:15)
+03-08 07:44:14.424 E/AndroidRuntime( 6079): 	at com.google.android.gms.ads.MobileAdsInitProvider.attachInfo(com.google.android.gms:play-services-ads-lite@@23.6.0:1)
+03-08 07:44:14.424 E/AndroidRuntime( 6079): 	at android.app.ActivityThread.installProvider(ActivityThread.java:7765)
+03-08 07:44:14.424 E/AndroidRuntime( 6079): 	... 11 more
+03-08 07:44:15.887 E/AndroidRuntime( 6095): FATAL EXCEPTION: main
+03-08 07:44:15.887 E/AndroidRuntime( 6095): Process: com.innov8.ravepart.dev, PID: 6095
+03-08 07:44:15.887 E/AndroidRuntime( 6095): java.lang.RuntimeException: Unable to get provider com.google.android.gms.ads.MobileAdsInitProvider: java.lang.IllegalStateException: 
+03-08 07:44:15.887 E/AndroidRuntime( 6095): 
+03-08 07:44:15.887 E/AndroidRuntime( 6095): ******************************************************************************
+03-08 07:44:15.887 E/AndroidRuntime( 6095): * Invalid application ID. Follow instructions here:                          *
+03-08 07:44:15.887 E/AndroidRuntime( 6095): * https://googlemobileadssdk.page.link/admob-android-update-manifest         *
+03-08 07:44:15.887 E/AndroidRuntime( 6095): * to find your app ID.                                                       *
+03-08 07:44:15.887 E/AndroidRuntime( 6095): * Google Ad Manager publishers should follow instructions here:              *
+03-08 07:44:15.887 E/AndroidRuntime( 6095): * https://googlemobileadssdk.page.link/ad-manager-android-update-manifest.   *
+03-08 07:44:15.887 E/AndroidRuntime( 6095): ******************************************************************************
+03-08 07:44:15.887 E/AndroidRuntime( 6095): 
+03-08 07:44:15.887 E/AndroidRuntime( 6095): 
+03-08 07:44:15.887 E/AndroidRuntime( 6095): 	at android.app.ActivityThread.installProvider(ActivityThread.java:7770)
+03-08 07:44:15.887 E/AndroidRuntime( 6095): 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:7276)
+03-08 07:44:15.887 E/AndroidRuntime( 6095): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6983)
+03-08 07:44:15.887 E/AndroidRuntime( 6095): 	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
+03-08 07:44:15.887 E/AndroidRuntime( 6095): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2236)
+03-08 07:44:15.887 E/AndroidRuntime( 6095): 	at android.os.Handler.dispatchMessage(Handler.java:106)
+03-08 07:44:15.887 E/AndroidRuntime( 6095): 	at android.os.Looper.loopOnce(Looper.java:205)
+03-08 07:44:15.887 E/AndroidRuntime( 6095): 	at android.os.Looper.loop(Looper.java:294)
+03-08 07:44:15.887 E/AndroidRuntime( 6095): 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+03-08 07:44:15.887 E/AndroidRuntime( 6095): 	at java.lang.reflect.Method.invoke(Native Method)
+03-08 07:44:15.887 E/AndroidRuntime( 6095): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+03-08 07:44:15.887 E/AndroidRuntime( 6095): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+03-08 07:44:15.887 E/AndroidRuntime( 6095): Caused by: java.lang.IllegalStateException: 
+03-08 07:44:15.887 E/AndroidRuntime( 6095): 
+03-08 07:44:15.887 E/AndroidRuntime( 6095): ******************************************************************************
+03-08 07:44:15.887 E/AndroidRuntime( 6095): * Invalid application ID. Follow instructions here:                          *
+03-08 07:44:15.887 E/AndroidRuntime( 6095): * https://googlemobileadssdk.page.link/admob-android-update-manifest         *
+03-08 07:44:15.887 E/AndroidRuntime( 6095): * to find your app ID.                                                       *
+03-08 07:44:15.887 E/AndroidRuntime( 6095): * Google Ad Manager publishers should follow instructions here:              *
+03-08 07:44:15.887 E/AndroidRuntime( 6095): * https://googlemobileadssdk.page.link/ad-manager-android-update-manifest.   *
+03-08 07:44:15.887 E/AndroidRuntime( 6095): ******************************************************************************
+03-08 07:44:15.887 E/AndroidRuntime( 6095): 
+03-08 07:44:15.887 E/AndroidRuntime( 6095): 
+03-08 07:44:15.887 E/AndroidRuntime( 6095): 	at com.google.android.gms.ads.internal.client.zzey.attachInfo(com.google.android.gms:play-services-ads-lite@@23.6.0:15)
+03-08 07:44:15.887 E/AndroidRuntime( 6095): 	at com.google.android.gms.ads.MobileAdsInitProvider.attachInfo(com.google.android.gms:play-services-ads-lite@@23.6.0:1)
+03-08 07:44:15.887 E/AndroidRuntime( 6095): 	at android.app.ActivityThread.installProvider(ActivityThread.java:7765)
+03-08 07:44:15.887 E/AndroidRuntime( 6095): 	... 11 more
+03-08 07:45:27.361 E/AndroidRuntime( 6198): FATAL EXCEPTION: main
+03-08 07:45:27.361 E/AndroidRuntime( 6198): Process: com.innov8.ravepart.dev, PID: 6198
+03-08 07:45:27.361 E/AndroidRuntime( 6198): java.lang.RuntimeException: Unable to get provider com.google.android.gms.ads.MobileAdsInitProvider: java.lang.IllegalStateException: 
+03-08 07:45:27.361 E/AndroidRuntime( 6198): 
+03-08 07:45:27.361 E/AndroidRuntime( 6198): ******************************************************************************
+03-08 07:45:27.361 E/AndroidRuntime( 6198): * Invalid application ID. Follow instructions here:                          *
+03-08 07:45:27.361 E/AndroidRuntime( 6198): * https://googlemobileadssdk.page.link/admob-android-update-manifest         *
+03-08 07:45:27.361 E/AndroidRuntime( 6198): * to find your app ID.                                                       *
+03-08 07:45:27.361 E/AndroidRuntime( 6198): * Google Ad Manager publishers should follow instructions here:              *
+03-08 07:45:27.361 E/AndroidRuntime( 6198): * https://googlemobileadssdk.page.link/ad-manager-android-update-manifest.   *
+03-08 07:45:27.361 E/AndroidRuntime( 6198): ******************************************************************************
+03-08 07:45:27.361 E/AndroidRuntime( 6198): 
+03-08 07:45:27.361 E/AndroidRuntime( 6198): 
+03-08 07:45:27.361 E/AndroidRuntime( 6198): 	at android.app.ActivityThread.installProvider(ActivityThread.java:7770)
+03-08 07:45:27.361 E/AndroidRuntime( 6198): 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:7276)
+03-08 07:45:27.361 E/AndroidRuntime( 6198): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6983)
+03-08 07:45:27.361 E/AndroidRuntime( 6198): 	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
+03-08 07:45:27.361 E/AndroidRuntime( 6198): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2236)
+03-08 07:45:27.361 E/AndroidRuntime( 6198): 	at android.os.Handler.dispatchMessage(Handler.java:106)
+03-08 07:45:27.361 E/AndroidRuntime( 6198): 	at android.os.Looper.loopOnce(Looper.java:205)
+03-08 07:45:27.361 E/AndroidRuntime( 6198): 	at android.os.Looper.loop(Looper.java:294)
+03-08 07:45:27.361 E/AndroidRuntime( 6198): 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+03-08 07:45:27.361 E/AndroidRuntime( 6198): 	at java.lang.reflect.Method.invoke(Native Method)
+03-08 07:45:27.361 E/AndroidRuntime( 6198): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+03-08 07:45:27.361 E/AndroidRuntime( 6198): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+03-08 07:45:27.361 E/AndroidRuntime( 6198): Caused by: java.lang.IllegalStateException: 
+03-08 07:45:27.361 E/AndroidRuntime( 6198): 
+03-08 07:45:27.361 E/AndroidRuntime( 6198): ******************************************************************************
+03-08 07:45:27.361 E/AndroidRuntime( 6198): * Invalid application ID. Follow instructions here:                          *
+03-08 07:45:27.361 E/AndroidRuntime( 6198): * https://googlemobileadssdk.page.link/admob-android-update-manifest         *
+03-08 07:45:27.361 E/AndroidRuntime( 6198): * to find your app ID.                                                       *
+03-08 07:45:27.361 E/AndroidRuntime( 6198): * Google Ad Manager publishers should follow instructions here:              *
+03-08 07:45:27.361 E/AndroidRuntime( 6198): * https://googlemobileadssdk.page.link/ad-manager-android-update-manifest.   *
+03-08 07:45:27.361 E/AndroidRuntime( 6198): ******************************************************************************
+03-08 07:45:27.361 E/AndroidRuntime( 6198): 
+03-08 07:45:27.361 E/AndroidRuntime( 6198): 
+03-08 07:45:27.361 E/AndroidRuntime( 6198): 	at com.google.android.gms.ads.internal.client.zzey.attachInfo(com.google.android.gms:play-services-ads-lite@@23.6.0:15)
+03-08 07:45:27.361 E/AndroidRuntime( 6198): 	at com.google.android.gms.ads.MobileAdsInitProvider.attachInfo(com.google.android.gms:play-services-ads-lite@@23.6.0:1)
+03-08 07:45:27.361 E/AndroidRuntime( 6198): 	at android.app.ActivityThread.installProvider(ActivityThread.java:7765)
+03-08 07:45:27.361 E/AndroidRuntime( 6198): 	... 11 more
+03-08 08:03:30.954 E/AndroidRuntime( 6357): FATAL EXCEPTION: main
+03-08 08:03:30.954 E/AndroidRuntime( 6357): Process: com.innov8.ravepart.dev, PID: 6357
+03-08 08:03:30.954 E/AndroidRuntime( 6357): java.lang.RuntimeException: Unable to get provider com.google.android.gms.ads.MobileAdsInitProvider: java.lang.IllegalStateException: 
+03-08 08:03:30.954 E/AndroidRuntime( 6357): 
+03-08 08:03:30.954 E/AndroidRuntime( 6357): ******************************************************************************
+03-08 08:03:30.954 E/AndroidRuntime( 6357): * Invalid application ID. Follow instructions here:                          *
+03-08 08:03:30.954 E/AndroidRuntime( 6357): * https://googlemobileadssdk.page.link/admob-android-update-manifest         *
+03-08 08:03:30.954 E/AndroidRuntime( 6357): * to find your app ID.                                                       *
+03-08 08:03:30.954 E/AndroidRuntime( 6357): * Google Ad Manager publishers should follow instructions here:              *
+03-08 08:03:30.954 E/AndroidRuntime( 6357): * https://googlemobileadssdk.page.link/ad-manager-android-update-manifest.   *
+03-08 08:03:30.954 E/AndroidRuntime( 6357): ******************************************************************************
+03-08 08:03:30.954 E/AndroidRuntime( 6357): 
+03-08 08:03:30.954 E/AndroidRuntime( 6357): 
+03-08 08:03:30.954 E/AndroidRuntime( 6357): 	at android.app.ActivityThread.installProvider(ActivityThread.java:7770)
+03-08 08:03:30.954 E/AndroidRuntime( 6357): 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:7276)
+03-08 08:03:30.954 E/AndroidRuntime( 6357): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6983)
+03-08 08:03:30.954 E/AndroidRuntime( 6357): 	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
+03-08 08:03:30.954 E/AndroidRuntime( 6357): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2236)
+03-08 08:03:30.954 E/AndroidRuntime( 6357): 	at android.os.Handler.dispatchMessage(Handler.java:106)
+03-08 08:03:30.954 E/AndroidRuntime( 6357): 	at android.os.Looper.loopOnce(Looper.java:205)
+03-08 08:03:30.954 E/AndroidRuntime( 6357): 	at android.os.Looper.loop(Looper.java:294)
+03-08 08:03:30.954 E/AndroidRuntime( 6357): 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+03-08 08:03:30.954 E/AndroidRuntime( 6357): 	at java.lang.reflect.Method.invoke(Native Method)
+03-08 08:03:30.954 E/AndroidRuntime( 6357): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+03-08 08:03:30.954 E/AndroidRuntime( 6357): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+03-08 08:03:30.954 E/AndroidRuntime( 6357): Caused by: java.lang.IllegalStateException: 
+03-08 08:03:30.954 E/AndroidRuntime( 6357): 
+03-08 08:03:30.954 E/AndroidRuntime( 6357): ******************************************************************************
+03-08 08:03:30.954 E/AndroidRuntime( 6357): * Invalid application ID. Follow instructions here:                          *
+03-08 08:03:30.954 E/AndroidRuntime( 6357): * https://googlemobileadssdk.page.link/admob-android-update-manifest         *
+03-08 08:03:30.954 E/AndroidRuntime( 6357): * to find your app ID.                                                       *
+03-08 08:03:30.954 E/AndroidRuntime( 6357): * Google Ad Manager publishers should follow instructions here:              *
+03-08 08:03:30.954 E/AndroidRuntime( 6357): * https://googlemobileadssdk.page.link/ad-manager-android-update-manifest.   *
+03-08 08:03:30.954 E/AndroidRuntime( 6357): ******************************************************************************
+03-08 08:03:30.954 E/AndroidRuntime( 6357): 
+03-08 08:03:30.954 E/AndroidRuntime( 6357): 
+03-08 08:03:30.954 E/AndroidRuntime( 6357): 	at com.google.android.gms.ads.internal.client.zzey.attachInfo(com.google.android.gms:play-services-ads-lite@@23.6.0:15)
+03-08 08:03:30.954 E/AndroidRuntime( 6357): 	at com.google.android.gms.ads.MobileAdsInitProvider.attachInfo(com.google.android.gms:play-services-ads-lite@@23.6.0:1)
+03-08 08:03:30.954 E/AndroidRuntime( 6357): 	at android.app.ActivityThread.installProvider(ActivityThread.java:7765)
+03-08 08:03:30.954 E/AndroidRuntime( 6357): 	... 11 more
+03-08 08:06:02.095 E/AndroidRuntime( 6686): FATAL EXCEPTION: main
+03-08 08:06:02.095 E/AndroidRuntime( 6686): Process: com.innov8.ravepart.dev, PID: 6686
+03-08 08:06:02.095 E/AndroidRuntime( 6686): java.lang.RuntimeException: Unable to get provider com.google.android.gms.ads.MobileAdsInitProvider: java.lang.IllegalStateException: 
+03-08 08:06:02.095 E/AndroidRuntime( 6686): 
+03-08 08:06:02.095 E/AndroidRuntime( 6686): ******************************************************************************
+03-08 08:06:02.095 E/AndroidRuntime( 6686): * Invalid application ID. Follow instructions here:                          *
+03-08 08:06:02.095 E/AndroidRuntime( 6686): * https://googlemobileadssdk.page.link/admob-android-update-manifest         *
+03-08 08:06:02.095 E/AndroidRuntime( 6686): * to find your app ID.                                                       *
+03-08 08:06:02.095 E/AndroidRuntime( 6686): * Google Ad Manager publishers should follow instructions here:              *
+03-08 08:06:02.095 E/AndroidRuntime( 6686): * https://googlemobileadssdk.page.link/ad-manager-android-update-manifest.   *
+03-08 08:06:02.095 E/AndroidRuntime( 6686): ******************************************************************************
+03-08 08:06:02.095 E/AndroidRuntime( 6686): 
+03-08 08:06:02.095 E/AndroidRuntime( 6686): 
+03-08 08:06:02.095 E/AndroidRuntime( 6686): 	at android.app.ActivityThread.installProvider(ActivityThread.java:7770)
+03-08 08:06:02.095 E/AndroidRuntime( 6686): 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:7276)
+03-08 08:06:02.095 E/AndroidRuntime( 6686): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6983)
+03-08 08:06:02.095 E/AndroidRuntime( 6686): 	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
+03-08 08:06:02.095 E/AndroidRuntime( 6686): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2236)
+03-08 08:06:02.095 E/AndroidRuntime( 6686): 	at android.os.Handler.dispatchMessage(Handler.java:106)
+03-08 08:06:02.095 E/AndroidRuntime( 6686): 	at android.os.Looper.loopOnce(Looper.java:205)
+03-08 08:06:02.095 E/AndroidRuntime( 6686): 	at android.os.Looper.loop(Looper.java:294)
+03-08 08:06:02.095 E/AndroidRuntime( 6686): 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+03-08 08:06:02.095 E/AndroidRuntime( 6686): 	at java.lang.reflect.Method.invoke(Native Method)
+03-08 08:06:02.095 E/AndroidRuntime( 6686): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+03-08 08:06:02.095 E/AndroidRuntime( 6686): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+03-08 08:06:02.095 E/AndroidRuntime( 6686): Caused by: java.lang.IllegalStateException: 
+03-08 08:06:02.095 E/AndroidRuntime( 6686): 
+03-08 08:06:02.095 E/AndroidRuntime( 6686): ******************************************************************************
+03-08 08:06:02.095 E/AndroidRuntime( 6686): * Invalid application ID. Follow instructions here:                          *
+03-08 08:06:02.095 E/AndroidRuntime( 6686): * https://googlemobileadssdk.page.link/admob-android-update-manifest         *
+03-08 08:06:02.095 E/AndroidRuntime( 6686): * to find your app ID.                                                       *
+03-08 08:06:02.095 E/AndroidRuntime( 6686): * Google Ad Manager publishers should follow instructions here:              *
+03-08 08:06:02.095 E/AndroidRuntime( 6686): * https://googlemobileadssdk.page.link/ad-manager-android-update-manifest.   *
+03-08 08:06:02.095 E/AndroidRuntime( 6686): ******************************************************************************
+03-08 08:06:02.095 E/AndroidRuntime( 6686): 
+03-08 08:06:02.095 E/AndroidRuntime( 6686): 
+03-08 08:06:02.095 E/AndroidRuntime( 6686): 	at s3.q3.attachInfo(Unknown Source:99)
+03-08 08:06:02.095 E/AndroidRuntime( 6686): 	at com.google.android.gms.ads.MobileAdsInitProvider.attachInfo(Unknown Source:2)
+03-08 08:06:02.095 E/AndroidRuntime( 6686): 	at android.app.ActivityThread.installProvider(ActivityThread.java:7765)
+03-08 08:06:02.095 E/AndroidRuntime( 6686): 	... 11 more
+03-08 08:06:12.396 E/AndroidRuntime( 6718): FATAL EXCEPTION: main
+03-08 08:06:12.396 E/AndroidRuntime( 6718): Process: com.innov8.ravepart.dev, PID: 6718
+03-08 08:06:12.396 E/AndroidRuntime( 6718): java.lang.RuntimeException: Unable to get provider com.google.android.gms.ads.MobileAdsInitProvider: java.lang.IllegalStateException: 
+03-08 08:06:12.396 E/AndroidRuntime( 6718): 
+03-08 08:06:12.396 E/AndroidRuntime( 6718): ******************************************************************************
+03-08 08:06:12.396 E/AndroidRuntime( 6718): * Invalid application ID. Follow instructions here:                          *
+03-08 08:06:12.396 E/AndroidRuntime( 6718): * https://googlemobileadssdk.page.link/admob-android-update-manifest         *
+03-08 08:06:12.396 E/AndroidRuntime( 6718): * to find your app ID.                                                       *
+03-08 08:06:12.396 E/AndroidRuntime( 6718): * Google Ad Manager publishers should follow instructions here:              *
+03-08 08:06:12.396 E/AndroidRuntime( 6718): * https://googlemobileadssdk.page.link/ad-manager-android-update-manifest.   *
+03-08 08:06:12.396 E/AndroidRuntime( 6718): ******************************************************************************
+03-08 08:06:12.396 E/AndroidRuntime( 6718): 
+03-08 08:06:12.396 E/AndroidRuntime( 6718): 
+03-08 08:06:12.396 E/AndroidRuntime( 6718): 	at android.app.ActivityThread.installProvider(ActivityThread.java:7770)
+03-08 08:06:12.396 E/AndroidRuntime( 6718): 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:7276)
+03-08 08:06:12.396 E/AndroidRuntime( 6718): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6983)
+03-08 08:06:12.396 E/AndroidRuntime( 6718): 	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
+03-08 08:06:12.396 E/AndroidRuntime( 6718): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2236)
+03-08 08:06:12.396 E/AndroidRuntime( 6718): 	at android.os.Handler.dispatchMessage(Handler.java:106)
+03-08 08:06:12.396 E/AndroidRuntime( 6718): 	at android.os.Looper.loopOnce(Looper.java:205)
+03-08 08:06:12.396 E/AndroidRuntime( 6718): 	at android.os.Looper.loop(Looper.java:294)
+03-08 08:06:12.396 E/AndroidRuntime( 6718): 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+03-08 08:06:12.396 E/AndroidRuntime( 6718): 	at java.lang.reflect.Method.invoke(Native Method)
+03-08 08:06:12.396 E/AndroidRuntime( 6718): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+03-08 08:06:12.396 E/AndroidRuntime( 6718): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+03-08 08:06:12.396 E/AndroidRuntime( 6718): Caused by: java.lang.IllegalStateException: 
+03-08 08:06:12.396 E/AndroidRuntime( 6718): 
+03-08 08:06:12.396 E/AndroidRuntime( 6718): ******************************************************************************
+03-08 08:06:12.396 E/AndroidRuntime( 6718): * Invalid application ID. Follow instructions here:                          *
+03-08 08:06:12.396 E/AndroidRuntime( 6718): * https://googlemobileadssdk.page.link/admob-android-update-manifest         *
+03-08 08:06:12.396 E/AndroidRuntime( 6718): * to find your app ID.                                                       *
+03-08 08:06:12.396 E/AndroidRuntime( 6718): * Google Ad Manager publishers should follow instructions here:              *
+03-08 08:06:12.396 E/AndroidRuntime( 6718): * https://googlemobileadssdk.page.link/ad-manager-android-update-manifest.   *
+03-08 08:06:12.396 E/AndroidRuntime( 6718): ******************************************************************************
+03-08 08:06:12.396 E/AndroidRuntime( 6718): 
+03-08 08:06:12.396 E/AndroidRuntime( 6718): 
+03-08 08:06:12.396 E/AndroidRuntime( 6718): 	at s3.q3.attachInfo(Unknown Source:99)
+03-08 08:06:12.396 E/AndroidRuntime( 6718): 	at com.google.android.gms.ads.MobileAdsInitProvider.attachInfo(Unknown Source:2)
+03-08 08:06:12.396 E/AndroidRuntime( 6718): 	at android.app.ActivityThread.installProvider(ActivityThread.java:7765)
+03-08 08:06:12.396 E/AndroidRuntime( 6718): 	... 11 more
+03-08 08:06:54.755 E/AndroidRuntime( 6752): FATAL EXCEPTION: main
+03-08 08:06:54.755 E/AndroidRuntime( 6752): Process: com.innov8.ravepart.dev, PID: 6752
+03-08 08:06:54.755 E/AndroidRuntime( 6752): java.lang.RuntimeException: Unable to get provider com.google.android.gms.ads.MobileAdsInitProvider: java.lang.IllegalStateException: 
+03-08 08:06:54.755 E/AndroidRuntime( 6752): 
+03-08 08:06:54.755 E/AndroidRuntime( 6752): ******************************************************************************
+03-08 08:06:54.755 E/AndroidRuntime( 6752): * Invalid application ID. Follow instructions here:                          *
+03-08 08:06:54.755 E/AndroidRuntime( 6752): * https://googlemobileadssdk.page.link/admob-android-update-manifest         *
+03-08 08:06:54.755 E/AndroidRuntime( 6752): * to find your app ID.                                                       *
+03-08 08:06:54.755 E/AndroidRuntime( 6752): * Google Ad Manager publishers should follow instructions here:              *
+03-08 08:06:54.755 E/AndroidRuntime( 6752): * https://googlemobileadssdk.page.link/ad-manager-android-update-manifest.   *
+03-08 08:06:54.755 E/AndroidRuntime( 6752): ******************************************************************************
+03-08 08:06:54.755 E/AndroidRuntime( 6752): 
+03-08 08:06:54.755 E/AndroidRuntime( 6752): 
+03-08 08:06:54.755 E/AndroidRuntime( 6752): 	at android.app.ActivityThread.installProvider(ActivityThread.java:7770)
+03-08 08:06:54.755 E/AndroidRuntime( 6752): 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:7276)
+03-08 08:06:54.755 E/AndroidRuntime( 6752): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6983)
+03-08 08:06:54.755 E/AndroidRuntime( 6752): 	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
+03-08 08:06:54.755 E/AndroidRuntime( 6752): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2236)
+03-08 08:06:54.755 E/AndroidRuntime( 6752): 	at android.os.Handler.dispatchMessage(Handler.java:106)
+03-08 08:06:54.755 E/AndroidRuntime( 6752): 	at android.os.Looper.loopOnce(Looper.java:205)
+03-08 08:06:54.755 E/AndroidRuntime( 6752): 	at android.os.Looper.loop(Looper.java:294)
+03-08 08:06:54.755 E/AndroidRuntime( 6752): 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+03-08 08:06:54.755 E/AndroidRuntime( 6752): 	at java.lang.reflect.Method.invoke(Native Method)
+03-08 08:06:54.755 E/AndroidRuntime( 6752): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+03-08 08:06:54.755 E/AndroidRuntime( 6752): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+03-08 08:06:54.755 E/AndroidRuntime( 6752): Caused by: java.lang.IllegalStateException: 
+03-08 08:06:54.755 E/AndroidRuntime( 6752): 
+03-08 08:06:54.755 E/AndroidRuntime( 6752): ******************************************************************************
+03-08 08:06:54.755 E/AndroidRuntime( 6752): * Invalid application ID. Follow instructions here:                          *
+03-08 08:06:54.755 E/AndroidRuntime( 6752): * https://googlemobileadssdk.page.link/admob-android-update-manifest         *
+03-08 08:06:54.755 E/AndroidRuntime( 6752): * to find your app ID.                                                       *
+03-08 08:06:54.755 E/AndroidRuntime( 6752): * Google Ad Manager publishers should follow instructions here:              *
+03-08 08:06:54.755 E/AndroidRuntime( 6752): * https://googlemobileadssdk.page.link/ad-manager-android-update-manifest.   *
+03-08 08:06:54.755 E/AndroidRuntime( 6752): ******************************************************************************
+03-08 08:06:54.755 E/AndroidRuntime( 6752): 
+03-08 08:06:54.755 E/AndroidRuntime( 6752): 
+03-08 08:06:54.755 E/AndroidRuntime( 6752): 	at s3.q3.attachInfo(Unknown Source:99)
+03-08 08:06:54.755 E/AndroidRuntime( 6752): 	at com.google.android.gms.ads.MobileAdsInitProvider.attachInfo(Unknown Source:2)
+03-08 08:06:54.755 E/AndroidRuntime( 6752): 	at android.app.ActivityThread.installProvider(ActivityThread.java:7765)
+03-08 08:06:54.755 E/AndroidRuntime( 6752): 	... 11 more

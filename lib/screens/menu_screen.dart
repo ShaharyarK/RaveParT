@@ -9,7 +9,7 @@ class MenuScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text('RaveParT - Menu'),
+        title: Text('RaveParT - Menu', style: TextStyle(color: Colors.white)),
         backgroundColor: Colors.purpleAccent,
       ),
       body: Center(

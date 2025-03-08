@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:torch_light/torch_light.dart';
 import '../providers/sound_sync_provider.dart';
+import 'dart:developer' as developer; // Import the developer library
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class RaveScreen extends StatefulWidget {
   @override
@@ -30,6 +32,8 @@ class RaveAnimation {
 }
 
 class _RaveScreenState extends State<RaveScreen> {
+  InterstitialAd? _interstitialAd;
+
   Color _backgroundColor = Colors.black;
   bool _isFlashing = true;
   double _flashSpeed = 300;
@@ -47,6 +51,7 @@ class _RaveScreenState extends State<RaveScreen> {
   @override
   void initState() {
     super.initState();
+    _initializeAd();
     _startLightShow();
     Future.delayed(Duration(seconds: 3), () {
       setState(() {
@@ -86,6 +91,65 @@ class _RaveScreenState extends State<RaveScreen> {
         }
       });
     });
+  }
+
+  Future<void> _initializeAd() async {
+    bool adLoaded = await _loadInterstitialAd();
+    if (adLoaded) {
+      _showAd(); // Only show if ad successfully loaded
+    }
+  }
+
+  Future<bool> _loadInterstitialAd() async {
+    Completer<bool> completer = Completer<bool>();
+
+    InterstitialAd.load(
+      adUnitId:
+          'ca-app-pub-3940256099942544/1033173712', // Replace with your AdMob Ad Unit ID
+      request: AdRequest(),
+      adLoadCallback: InterstitialAdLoadCallback(
+        onAdLoaded: (InterstitialAd ad) {
+          setState(() {
+            _interstitialAd = ad;
+          });
+
+          // Handle ad close events
+          ad.fullScreenContentCallback = FullScreenContentCallback(
+            onAdDismissedFullScreenContent: (ad) {
+              developer.log("Ad dismissed. Loading a new one...");
+              ad.dispose();
+              _interstitialAd = null;
+              _loadInterstitialAd(); // Load next ad immediately
+            },
+            onAdFailedToShowFullScreenContent: (ad, error) {
+              developer.log("Ad failed to show: ${error.message}");
+              ad.dispose();
+              _interstitialAd = null;
+              _loadInterstitialAd(); // Load next ad on failure too
+            },
+          );
+
+          developer.log("Ad loaded successfully!");
+          completer.complete(true);
+        },
+        onAdFailedToLoad: (LoadAdError error) {
+          developer.log("Failed to load ad: ${error.message}");
+          _interstitialAd = null;
+          completer.complete(false);
+        },
+      ),
+    );
+
+    return completer.future;
+  }
+
+  void _showAd() {
+    if (_interstitialAd != null) {
+      _interstitialAd!.show();
+      _interstitialAd = null; // Prevent multiple show calls
+    } else {
+      developer.log("Ad not ready yet.");
+    }
   }
 
   // List of animations with their properties
@@ -285,7 +349,7 @@ class _RaveScreenState extends State<RaveScreen> {
           break;
       }
     } catch (e) {
-      print("Flashlight Error: $e");
+      developer.log("Flashlight Error: $e");
     }
   }
 
@@ -293,7 +357,7 @@ class _RaveScreenState extends State<RaveScreen> {
     try {
       await TorchLight.disableTorch();
     } catch (e) {
-      print("Error turning off flash: $e");
+      developer.log("Error turning off flash: $e");
     }
   }
 
@@ -329,10 +393,13 @@ class _RaveScreenState extends State<RaveScreen> {
 
   @override
   void dispose() {
-    Provider.of<SoundSyncProvider>(context, listen: false).stopCapture();
+    // Provider.of<SoundSyncProvider>(context, listen: false).stopCapture();
     _flashTimer?.cancel();
     _rotationTimer?.cancel();
     _turnOffFlash();
+    if (_interstitialAd != null) {
+      _showAd(); // Show ad before disposing
+    }
     super.dispose();
   }
 

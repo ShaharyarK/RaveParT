@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'dart:math';
-
+import 'dart:developer' as developer; // Import the developer library
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../services/audio_capture_service.dart';
@@ -20,9 +20,11 @@ class SoundSyncProvider extends ChangeNotifier {
   Future<void> requestMicrophonePermission() async {
     var status = await Permission.microphone.request();
     if (status.isGranted) {
-      print("🎤 Microphone Permission Granted!");
+      developer.log("🎤 Microphone Permission Granted!",
+          name: 'SoundSyncProvider');
     } else {
-      print("❌ Microphone Permission Denied!");
+      developer.log("❌ Microphone Permission Denied!",
+          name: 'SoundSyncProvider');
     }
   }
 
@@ -39,7 +41,8 @@ class SoundSyncProvider extends ChangeNotifier {
     if (_isCapturing) return;
     var status = await Permission.microphone.status;
     if (!status.isGranted) {
-      print("🚨 Microphone permission required before capturing!");
+      developer.log("🚨 Microphone permission required before capturing!",
+          name: 'SoundSyncProvider');
       return;
     }
 
@@ -84,7 +87,8 @@ class SoundSyncProvider extends ChangeNotifier {
     List<double> signal = audioBytes.map((b) => b.toDouble()).toList();
     int min = audioBytes.reduce((a, b) => a < b ? a : b);
     int max = audioBytes.reduce((a, b) => a > b ? a : b);
-    print("🔊 Min Volume: $min, Max Volume: $max");
+    developer.log("🔊 Min Volume: $min, Max Volume: $max",
+        name: 'SoundSyncProvider');
 
     // Calculate RMS
     double rms = sqrt(
